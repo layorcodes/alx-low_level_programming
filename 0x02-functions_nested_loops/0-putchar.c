@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - writes a program that prints
- * _putchar followed by a new line
- * Return 0 always (Success)
+ * main - main block
+ * Description:print _putchar in a new line 
+ * Return:this program returns zero
  */
 
 int main(void)
@@ -16,5 +16,6 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
