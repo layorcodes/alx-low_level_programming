@@ -2,7 +2,7 @@
 
 /**
  * main - main block
- * Description:print _putchar in a new line 
+ * Description:print -putchar in a new line
  * Return:this program returns zero
  */
 
