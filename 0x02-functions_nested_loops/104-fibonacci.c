@@ -6,7 +6,7 @@
  * followed by anew line
  * Return : Always 0 (success)
  */
-int main(void)
+int main()
 {
 	unsigned long int i, j, k, j1, j2, k1, k2;
 
