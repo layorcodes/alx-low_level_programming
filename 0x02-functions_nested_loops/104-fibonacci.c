@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - finds an dprints the first 98 Fibonacci numbers,
+ * main - finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2
  * followed by anew line
- * Return : Always 0 (sccess)
+ * Return : Always 0 (success)
  */
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(". %lu", k);
+		printf(", %lu", k);
 		k = k + j;
 		j = k - j;
 	}
