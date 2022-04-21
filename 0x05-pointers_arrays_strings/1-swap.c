@@ -1,10 +1,11 @@
 #include "main.h"
 
 /*
- * swap_int - swaps the value of two integers
- * @a: integer to swap
- * @b: integer to swap
- * Description : swaps two integers
+ * swap_int - swaps the value of two integers.
+ * @a: integer to swap.
+ * @b: integer to swap.
+ * @c: stores the value of a.
+ * Description : swaps two integers.
  *
  * Return : void
  */
