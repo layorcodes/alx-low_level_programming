@@ -1,11 +1,12 @@
 #include "main.h"
 /**
  * _strncat - this function cocatenates two strings
- * @dest: the parameter to be returned
- * @src: the parameter to be appended
- * @n: amount of bytes to be used for src
- * Return: return the value of dest
+ * @dest: the parameter to be returned.
+ * @src: the parameter to be appended.
+ * @n: amount of bytes to be used for src.
+ * Return: return the value of dest.
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int fig = 0, fig1 = 0;
