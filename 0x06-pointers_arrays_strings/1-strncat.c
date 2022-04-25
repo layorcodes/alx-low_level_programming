@@ -7,9 +7,11 @@
  * @n: amount of bytes to be used for src.
  * Return: return the value of dest.
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int fig = 0, fig1 = 0;
+	int fig = 0;
+	int fig1 = 0;
 
 	while (*(dest + fig) != '\0')
 	{
