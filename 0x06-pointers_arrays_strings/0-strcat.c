@@ -6,24 +6,22 @@
  * @src: parameter pointer to a character
  * Return: return value of dest
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int x = 0, y =0;
+	int count = 0, count1 = 0;
 
-	while (*(dest + x) != '\0')
+	while (*(dest + count) != '\0')
 	{
-		x++;
+		count++;
 	}
-	while (y >= 0)
+
+	while (count1 >= 0)
 	{
-		*(dest + x) = *(src + y);
-		if (*(src + y) = '\0')
+		*(dest + count) = *(src + count1);
+		if (*(src + count1) == '\0')
 			break;
-		x++;
-		y++;
+		count++;
+		count1++;
 	}
-	
-
 	return (dest);
 }
