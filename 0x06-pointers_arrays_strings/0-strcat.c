@@ -7,7 +7,7 @@
  * Return: return value of dest
  */
 
-char *_strcat(char *dset, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int x = 0, y =0;
 
@@ -22,6 +22,7 @@ char *_strcat(char *dset, char *src)
 			break;
 		x++;
 		y++;
+	}
 	
 
 	return (dest);
