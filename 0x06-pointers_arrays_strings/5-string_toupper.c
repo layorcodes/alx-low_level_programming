@@ -9,12 +9,13 @@
 
 char *string_toupper(char *s)
 {
-	int count = 0;
+	int fig = 0;
 
-	while (*(s + count) != '\0')
+	while (*(s + fig) != '\0')
 	{
-		if ((*(s + count) >= 97) && (*(s + count) <= 122))
-			count++;
+		if ((*(s + fig) >= 97) && (*(s + fig) <= 122))
+			*(s + fig) = *(s + fig) - 32;
+		fig++;
 	}
 
 	return (s);
