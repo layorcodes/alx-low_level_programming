@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncat - this function cocatenates two strings
  * @dest: the parameter to be returned.
@@ -6,7 +7,6 @@
  * @n: amount of bytes to be used for src.
  * Return: return the value of dest.
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int fig = 0, fig1 = 0;
@@ -18,11 +18,12 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (fig1 < n)
 	{
-		*(dest + fig) = *(src +fig1);
+		*(dest + fig) = *(src + fig1);
 		if (*(src + fig1) == '\0')
 			break;
 		fig++;
 		fig1++;
 	}
+	
 	return (dest);
 }
