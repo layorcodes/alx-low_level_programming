@@ -1,21 +1,20 @@
 #include "main.h"
-
 /**
  * _strncpy - copies a string
- * @dest: destination of parameter
- * @src: source of parameter
- * @n: amount of bytes from src
- * Return: the pointer to dest
+ * @dest: destination parameter.
+ * @src: second parameter.
+ * @n: number of bytes.
+ * Return: dest parameter
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int x;
+	int m;
 
-	for (x = 0; x < n && src[x] != '\0'; x++;)
-		dest[x] = src[x];
-	for (; i < n; i++)
-		dest[x] = '\0';
+	for (m = 0; m < n && src[m] != '\0'; m++)
+		dest[m] = src[m];
+	for ( ; m < n; m++)
+		dest[m] = '\0';
 
 	return (dest);
 }
