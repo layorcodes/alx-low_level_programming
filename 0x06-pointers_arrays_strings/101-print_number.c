@@ -5,6 +5,7 @@
  * @n: the input integer
  * Return: no return
  */
+
 void print_number(int n)
 {
 	unsigned int a, i, count;
