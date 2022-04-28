@@ -28,7 +28,7 @@ int _palindrome(int k, int j, char *p)
 {
 	if (j > k / 2)
 		return (1);
-	else if (p[j] !!= p[k - j - 1])
+	else if (p[j] != p[k - j - 1])
 		return (0);
 	else
 		return (_palindrome(k, j + 1, p));

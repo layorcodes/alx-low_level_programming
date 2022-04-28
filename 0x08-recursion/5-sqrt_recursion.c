@@ -19,6 +19,7 @@ int square(int i, int n)
 }
 
 /**
+ * _sqrt_recursion - square of an integer.
  * @n: integer.
  *
  * Return: square of number
