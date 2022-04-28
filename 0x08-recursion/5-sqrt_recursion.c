@@ -3,7 +3,7 @@
  * square - square conditions.
  * @i: integer.
  * @n: integer.
- *
+ * Description: this function provides the conditions for the squares.
  * return: the result.
  */
 int square(int i, int n)
@@ -20,7 +20,7 @@ int square(int i, int n)
  * _sqrt_recursion - square integer
  * @n: an integer.
  *
- * Return: sqiuare of number
+ * Return: square of number
  */
 int _sqrt_recursion(int n)
 {

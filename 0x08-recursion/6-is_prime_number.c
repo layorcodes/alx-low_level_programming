@@ -31,7 +31,7 @@ int divisor(int n, int m)
 
 int is_prime_number(int n)
 {
-	if ((!(n % 2) && n != 2) \\ n < 2)
+	if ((!(n % 2) && n != 2) || n < 2)
 	{
 		return (0);
 	}
