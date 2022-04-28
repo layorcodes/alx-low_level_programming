@@ -1,28 +1,28 @@
 #include "main.h"
-/**
- * square - square conditions.
- * @i: integer.
- * @n: integer.
- * Description: this function provides the conditions for the squares.
- * return: the result.
- */
-int square(int i, int n)
-{
-	if (i * i == n)
-		return (i);
-	else if (i > n / 2)
-		return (-1);
-	else
-		return (square(i + 1, n));
-}
 
 /**
- * _sqrt_recursion - square integer
- * @n: an integer.
- *
- * Return: square of number
+ * _sqrt_recursion - main function.
+ * @n: ineger
+ * Return: int
  */
 int _sqrt_recursion(int n)
 {
-	return (square(1, n));
+	return (_sqrt(n, 1));
+}
+
+/**
+ * _sqrt - sub function.
+ * @n: integer
+ * @m: integer
+ * Return: sqrt
+ */
+int _sqrt(int n, int m)
+{
+	if ( n < 0)
+		return (-1);
+	if ((m * m) > n)
+		return (-1);
+	if (m * m == n)
+		return(m);
+	return (_sqrt(n, m + 1));
 }
