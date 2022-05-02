@@ -1,5 +1,6 @@
 #include <stdlib.h>
-#include <ctype.h>
+#include <stdio.h>
+
 /**
  * main - adds positive numbers.
  * @argc: number of command line arguments.
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		add += atoi(argv[i]);
+		add += atoi(argv[n]);
 	}
 	printf("%d\n", add);
 	return (0);
