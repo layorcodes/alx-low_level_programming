@@ -1,5 +1,24 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "stdbool.h"
+
+/**
+ *  * is_num - iterates trough each argv to test if its a number
+ *   * @args: a argv
+ *    * Return: true only if entire string is a number, false if not
+ *     */
+
+bool is_num(char *args)
+{
+	        int m = 0;
+
+		for (m = 0; args[m]; m++)
+		{
+			if (!(args[m] >= '0' && args[m] <= '9'))
+				return (0);
+		}
+		return (1);
+}
 
 /**
  * main - adds positive numbers.
@@ -9,20 +28,29 @@
  */
 int main(int argc, char *argv[])
 {
-	int n, m, add = 0;
+	int n = 1;
+	int sum = 0;
 
-	for (n = 1; n < argc; n++)
+	if (argc == 1)
 	{
-		for (m = 0; argv[n][m] != '\0'; m++)
-		{
-			if (!isdigit(argv[n][m]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		add += atoi(argv[n]);
+		printf("0\n");
+		return (0);
 	}
-	printf("%d\n", add);
+
+	while (n < argc)
+	{
+		if (is_num(argv[n]))
+		{
+			sum += atoi(argv[n]);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		n++;
+	}
+	printf("%d\n", sum);
+
 	return (0);
 }
