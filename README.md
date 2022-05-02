@@ -1,1 +1,1 @@
-Learning C is fun
+Debugging is an integral part of coding
