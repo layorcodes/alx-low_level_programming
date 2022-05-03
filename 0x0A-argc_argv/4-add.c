@@ -3,10 +3,10 @@
 #include "stdbool.h"
 
 /**
- *  * is_num - iterates trough each argv to test if its a number
- *   * @args: a argv
- *    * Return: true only if entire string is a number, false if not
- *     */
+ * is_num - iterates trough each argv to test if its a number
+ * @args: a argv
+ * Return: true only if entire string is a number, false if not
+ */
 
 bool is_num(char *args)
 {
