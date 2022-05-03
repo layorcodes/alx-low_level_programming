@@ -10,14 +10,14 @@
 
 bool is_num(char *args)
 {
-	        int m = 0;
-
-		for (m = 0; args[m]; m++)
-		{
-			if (!(args[m] >= '0' && args[m] <= '9'))
-				return (0);
-		}
-		return (1);
+	int m = 0;
+	
+	for (m = 0; args[m]; m++)
+	{
+		if (!(args[m] >= '0' && args[m] <= '9'))
+			return (0);
+	}
+	return (1);
 }
 
 /**
