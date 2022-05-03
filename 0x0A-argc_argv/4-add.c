@@ -1,56 +1,29 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include "stdbool.h"
 
-/**
- * is_num - iterates trough each argv to test if its a number
- * @args: a argv
- * Return: true only if entire string is a number, false if not
- */
-
-bool is_num(char *args)
-{
-	int m = 0;
-	
-	for (m = 0; args[m]; m++)
-	{
-		if (!(args[m] >= '0' && args[m] <= '9'))
-			return (0);
-	}
-	return (1);
-}
-
+#include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds positive numbers.
  * @argc: number of command line arguments.
  * @argv: array that contains the program command line arguments.
- * Return: 0
+ * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
-	int n = 1;
-	int sum = 0;
+	int i, j, add = 0;
 
-	if (argc == 1)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	while (n < argc)
-	{
-		if (is_num(argv[n]))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			sum += atoi(argv[n]);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		n++;
+		add += atoi(argv[i]);
 	}
-	printf("%d\n", sum);
-
+	printf("%d\n", add);
 	return (0);
 }
