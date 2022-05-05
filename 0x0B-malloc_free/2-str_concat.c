@@ -7,7 +7,7 @@
  * @s2: second string to concatenate.
  * Return: pointer to the new string created.
  */
-char *str_concat(char *s1, har *s2)
+char *str_concat(char *s1, char *s2)
 {
 	char *s3;
 	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
