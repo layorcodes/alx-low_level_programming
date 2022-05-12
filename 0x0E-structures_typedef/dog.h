@@ -12,7 +12,7 @@ typedef struct dog dog_t;
  * @age: Second member.
  * @owner: Third member
  *
- * Description: Longer description of a dog's info that stors its name and its age and the name of the owner.
+ * Description: Longer description of a dog's info.
  */
 struct dog
 {
