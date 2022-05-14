@@ -5,18 +5,18 @@
  * the operation asked by the user
  * @s: te operation given by user.
  *
- * Return: pointer to the function thet corresponds to te operation
+ * Return: pointer to the function thet corresponds to the
  * operator given as a parameter.
  */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
-		{"+", op_add}
-		{"-", op_sub}
-		{"*", op_mul}
-		{"/", op_div}
-		{"%", op_mod}
-		{NULL, NULL}
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL< NULL}
 	};
 	int i;
 
@@ -27,7 +27,7 @@ int (*get_op_func(char *s))(int, int)
 		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
 		i++;
-i	}
+	}
 
 	return (NULL);
 }

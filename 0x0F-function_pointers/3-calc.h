@@ -1,5 +1,5 @@
-#ifndef _CALC_H_
-#define _CALC_H_
+#ifndef CALC_H
+#define CALC_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,7 +9,7 @@
  * struct op - struct op.
  *
  * @op: operator.
- * @f: The function associated
+ * @f: The function associated.
  */
 typedef struct op
 {

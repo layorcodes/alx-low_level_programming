@@ -6,11 +6,11 @@
  * @size: size of the array.
  * @cmp: pointer to the comparing functions.
  *
- * Retur index of the first element for which 
+ * Return: index of the first element for which 
  * the cmp function does not return 0, or -1
  * or size is negative
  */
-int int_index(int array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
