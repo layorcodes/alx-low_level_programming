@@ -4,7 +4,7 @@
  * print_all - prints anything.
  * @format: list of types of arguments pasedto the function.
  */
-void print_all(const char * con st format, ...)
+void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
