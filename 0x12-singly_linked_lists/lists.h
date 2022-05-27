@@ -1,7 +1,12 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-/* struct list_s - struct type for lists */
+/** struct list_s - a struct for list s.
+* @str: string.
+* @int: integer.
+* 
+* Description: this is a struct for list_s taking a character and an integer.
+*/
 
 typedef struct list_s
 {
